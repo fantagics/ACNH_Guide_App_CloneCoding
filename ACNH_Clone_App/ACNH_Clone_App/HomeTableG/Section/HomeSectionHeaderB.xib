@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="40" id="KGk-i7-Jjw" customClass="HomeSectionHeaderB" customModule="ACNH_Clone_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="HomeSectionHeaderB" customModule="ACNH_Clone_App" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfc-e9-pOt">
+                        <rect key="frame" x="20" y="10" width="36" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tga-Qr-h3K">
+                        <rect key="frame" x="238" y="10" width="125" height="20"/>
+                        <color key="backgroundColor" red="0.16156706209999999" green="0.65858113770000004" blue="0.52210557459999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="8G5-s8-yrP"/>
+                            <constraint firstAttribute="width" constant="125" id="jXZ-cb-10h"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                        <state key="normal" title="실시간 포획 가능">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageReference key="image" image="clock" catalog="system" symbolScale="small"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                        </state>
+                        <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="실시간 포획 가능" imagePadding="5">
+                            <imageReference key="image" image="clock" catalog="system" symbolScale="small"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Tga-Qr-h3K" secondAttribute="bottom" constant="10" id="8ZN-Mo-Ldw"/>
+                    <constraint firstAttribute="trailing" secondItem="Tga-Qr-h3K" secondAttribute="trailing" constant="20" id="PRb-TI-Ish"/>
+                    <constraint firstItem="Tga-Qr-h3K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="QoV-iT-1vV"/>
+                    <constraint firstItem="Kfc-e9-pOt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Saa-3P-fIE"/>
+                    <constraint firstAttribute="bottom" secondItem="Kfc-e9-pOt" secondAttribute="bottom" constant="10" id="YqD-dX-YKA"/>
+                    <constraint firstItem="Kfc-e9-pOt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="wO5-De-Lde"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="realtimeFarmingBtn" destination="Tga-Qr-h3K" id="jCZ-ki-9fS"/>
+                <outlet property="sectionTitle" destination="Kfc-e9-pOt" id="JeS-Qz-y8B"/>
+            </connections>
+            <point key="canvasLocation" x="177.536231884058" y="124.55357142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clock" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TableFooter" customModule="ACNH_Clone_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="194"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="V7B-lh-GvS">
+                    <rect key="frame" x="25" y="54" width="363" height="55.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xD6-P8-NIv">
+                            <rect key="frame" x="0.0" y="18" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="FJI-Ii-DXK"/>
+                                <constraint firstAttribute="height" constant="20" id="bGm-OB-c5p"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="Mail"/>
+                            <connections>
+                                <action selector="connectEmail:" destination="iN0-l3-epB" eventType="touchUpInside" id="ms3-D1-kOH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRe-84-n1G">
+                            <rect key="frame" x="166.5" y="15.5" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="cMh-0b-Nzf"/>
+                                <constraint firstAttribute="width" constant="25" id="ePb-KL-GxF"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="Discode"/>
+                            <connections>
+                                <action selector="connectDiscode:" destination="iN0-l3-epB" eventType="touchUpInside" id="xyH-AI-toT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRA-ru-QHU">
+                            <rect key="frame" x="338" y="15.5" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="EH2-Sj-ltU"/>
+                                <constraint firstAttribute="height" constant="25" id="aB6-pi-Uej"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="Instagram"/>
+                            <connections>
+                                <action selector="connectInstagram:" destination="iN0-l3-epB" eventType="touchUpInside" id="PMw-NN-WyM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jn-gR-Dun">
+                    <rect key="frame" x="25" y="119.5" width="363" height="26"/>
+                    <color key="backgroundColor" red="0.44766944650000001" green="0.71792954210000004" blue="0.80365794899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="광고제거">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="removeAd:" destination="iN0-l3-epB" eventType="touchUpInside" id="p9p-tE-kxl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uk-L5-YNd">
+                    <rect key="frame" x="153" y="155.5" width="107" height="18.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="tintColor" systemColor="labelColor"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Update History">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="calendar" catalog="system" symbolScale="medium"/>
+                    </state>
+                    <connections>
+                        <action selector="updateHistory:" destination="iN0-l3-epB" eventType="touchUpInside" id="5cs-fa-4Eb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="V7B-lh-GvS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="7fj-1h-tF2"/>
+                <constraint firstItem="9jn-gR-Dun" firstAttribute="leading" secondItem="V7B-lh-GvS" secondAttribute="leading" id="DSE-ht-Onv"/>
+                <constraint firstItem="V7B-lh-GvS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="IEM-Z9-2Gt"/>
+                <constraint firstItem="9jn-gR-Dun" firstAttribute="trailing" secondItem="V7B-lh-GvS" secondAttribute="trailing" id="Pyg-Eu-es1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="V7B-lh-GvS" secondAttribute="trailing" constant="25" id="VmJ-l6-V4L"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5uk-L5-YNd" secondAttribute="bottom" constant="20" id="cPe-PP-wrY"/>
+                <constraint firstItem="5uk-L5-YNd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cUS-z2-Rvx"/>
+                <constraint firstItem="5uk-L5-YNd" firstAttribute="top" secondItem="9jn-gR-Dun" secondAttribute="bottom" constant="10" id="eL3-Sc-5Ol"/>
+                <constraint firstItem="9jn-gR-Dun" firstAttribute="top" secondItem="V7B-lh-GvS" secondAttribute="bottom" constant="10" id="lkt-FC-3br"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="rmAdBtn" destination="9jn-gR-Dun" id="z7W-ew-cNV"/>
+            </connections>
+            <point key="canvasLocation" x="258.69565217391306" y="-51.5625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Discode" width="512" height="512"/>
+        <image name="Instagram" width="145" height="145"/>
+        <image name="Mail" width="256" height="256"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

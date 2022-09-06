@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="94" id="KGk-i7-Jjw" customClass="AnimalTVCell" customModule="ACNH_Clone_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="436" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ex9-1Y-R1e">
+                        <rect key="frame" x="20" y="5" width="391" height="84"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCD-Dc-JXM">
+                                <rect key="frame" x="0.0" y="31.5" width="30" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.23863637357047107" green="0.23863637357047107" blue="0.23863637357047107" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hejuk" translatesAutoresizingMaskIntoConstraints="NO" id="Tw8-B7-WUf">
+                                <rect key="frame" x="65.5" y="7" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="SZb-0Y-kR9"/>
+                                    <constraint firstAttribute="width" constant="70" id="h23-Aq-Q9p"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="lc8-LI-h1a">
+                                <rect key="frame" x="171.5" y="23.5" width="70" height="37.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="히죽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0r1-OA-rUJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.23863637357047107" green="0.23863637357047107" blue="0.23863637357047107" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="남 / 고양이 / 먹보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLf-1S-I0B">
+                                        <rect key="frame" x="0.0" y="25.5" width="70" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" red="0.23863637357047107" green="0.23863637357047107" blue="0.23863637357047107" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRX-oJ-gAs">
+                                <rect key="frame" x="277" y="26.5" width="40.5" height="31"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <imageReference key="image" image="house.fill" catalog="system" symbolScale="small"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="homeBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2kr-Pm-qKW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKg-Df-X4m">
+                                <rect key="frame" x="353" y="26.5" width="38" height="31"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="heart.fill" catalog="system" symbolScale="small"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="favoriteBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rk1-bU-qk4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Ex9-1Y-R1e" secondAttribute="trailing" constant="25" id="Jy7-g5-k1I"/>
+                    <constraint firstItem="Ex9-1Y-R1e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="eTE-pv-5QY"/>
+                    <constraint firstItem="Ex9-1Y-R1e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="el4-xV-500"/>
+                    <constraint firstAttribute="bottom" secondItem="Ex9-1Y-R1e" secondAttribute="bottom" constant="5" id="tQC-Lc-fza"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="animalFeature" destination="cLf-1S-I0B" id="kxz-Xo-UA6"/>
+                <outlet property="animalName" destination="0r1-OA-rUJ" id="fsH-mM-piy"/>
+                <outlet property="animalNum" destination="gCD-Dc-JXM" id="dZt-X3-C73"/>
+                <outlet property="animalProfile" destination="Tw8-B7-WUf" id="5JQ-JG-Jne"/>
+                <outlet property="favoriteBtn" destination="JKg-Df-X4m" id="x6E-Xu-tmP"/>
+                <outlet property="homeBtn" destination="IRX-oJ-gAs" id="h8h-Vw-1KT"/>
+            </connections>
+            <point key="canvasLocation" x="215.94202898550725" y="141.29464285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="hejuk" width="260" height="488"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+    </resources>
+</document>
